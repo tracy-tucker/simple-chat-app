@@ -1,4 +1,4 @@
-import firebase from 'firebase';
+import firebase from 'firebase'
 
 // Initialize access to Firebase
 const firebaseApp = firebase.initializeApp({
@@ -12,9 +12,9 @@ const firebaseApp = firebase.initializeApp({
 });
 
 // Initialize access to Firestore
-const db = firebaseApp.firestore();
+const db = firebaseApp.firestore()
 
 // Initialize access to Firebase Authentication
-const auth = firebase.auth();
+const auth = firebase.auth()
 
-export {db, auth};
+export { db, auth }
