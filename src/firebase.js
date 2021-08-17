@@ -11,10 +11,10 @@ const firebaseApp = firebase.initializeApp({
     measurementId: "G-JM99MDS8F0"
 });
 
-// Initialize access to Firestore
+///// Initialize access to Firestore /////
 const db = firebaseApp.firestore()
 
-// Initialize access to Firebase Authentication
+///// Initialize access to Firebase Authentication /////
 const auth = firebase.auth()
 
 export { db, auth }
