@@ -5,6 +5,7 @@ import {auth} from './firebase.js'
 import { useAuthState } from 'react-firebase-hooks/auth'
 
 function App() {
+  // useAuthState replaces firebase.auth().onAuthStateChange()
   const [user] = useAuthState(auth)
   return (
     <>
