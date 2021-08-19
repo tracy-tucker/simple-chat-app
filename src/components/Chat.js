@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { db } from '../firebase'
+import { auth, db } from '../firebase'
 import SendMessage from './SendMessage'
 import SignOut from './SignOut'
 
@@ -14,7 +14,7 @@ function Chat() {
         <div>
             <SignOut />
             {messages.map(({ id, text, photoURL, uid }) => (
-                <div key={id}>
+                <div key={id} className={`msg ${uid === auth.currentUser.uid ? 'sent' : 'received'}`}>
                     <img src={photoURL} alt="" />
                     <p>{text}</p>
                 </div>
